@@ -1,0 +1,116 @@
+body {
+  padding:0px;
+  margin:0px;
+  background-color:#363D47 !important;
+}
+.header{
+  color:#D2691E;
+  margin-bottom:50px;
+}
+
+h2{
+  height:20px;
+}
+h2:hover{
+  font-size:35px;
+  cursor:pointer;
+}
+
+  input[type='search']{
+    display:none;
+    height:50px;
+    width:50px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    background-color:#2D313C;
+    border-radius:5px;
+    color: #63717f;
+    border:none;
+    outline:none;
+    transition:width 2s;
+     box-shadow: 0 0 10px rgba(0,0,0,10);
+  }
+
+input[type='submit']{
+  position:absolute;
+  border-left:none;
+  margin-left:-50px;
+  outline:none;
+  display:none;
+  border:none;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+  background-color:#2D313C;
+  height:50px;
+  width:50px;
+  cursor:pointer;
+  font-weight:600;
+  font-size:18px;
+  box-shadow: 0 0 10px rgba(0,0,0,10)
+}
+input#search::-webkit-input-placeholder {
+color: #65737e;
+}
+input#search:-moz-placeholder { 
+color: #65737e; 
+}
+input#search::-moz-placeholder {
+color: #65737e; 
+}
+input#search:-ms-input-pholder { 
+color: #65737e; 
+}
+input[type='submit']:hover{
+  box-shadow: 0 0 5 10px rgba(0,0,0,0.5);
+}
+.click_me{
+  margin:0 auto;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  border:3px solid #D2691E;
+  transform:rotate(45deg);
+  
+}
+.click_me:after{
+  display:block;
+  position:absolute;
+  content:'';
+  width:3px;
+  height:30px;
+  background-color:#D2691E;
+  transform:translate(25px,55px);
+}
+.click_me:hover{
+  animation:spin;
+  animation-duration:1s;
+}
+@keyframes spin{
+  from{transform:rotate(45deg);}
+  to{transform:rotate(405deg);}
+}
+
+.clicked{
+  display:block;
+}
+.resultOutput{
+  display:none;
+  padding:10px;
+  margin-top:10px;
+  margin-bottom:10px;
+  min-height:100px;
+  background-color:#252934;
+}
+
+.resultOutput:hover{
+ border-right:5px solid #D2691E;
+  border-left:5px solid #D2691E; 
+  box-shadow: 0 0 20px rgba(0,0,0,10);
+}
+.resultOutput p, .resultOutput h3{
+color:#D2691E;
+}
+a:hover,a:visited{
+  text-decoration:none;
+}
